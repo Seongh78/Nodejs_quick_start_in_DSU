@@ -1,0 +1,12 @@
+# 파일명에서 _는 제거 후 사용바랍니다.
+# PORT=8000
+MODE=development
+
+# DB Config
+# DATABASE_NAME=sequelize_sample
+DATABASE_NAME=student_management
+DATABASE_HOST=db.stmt.co.kr
+DATABASE_PORT=3306
+DATABASE_USERNAME=stmt_username
+DATABASE_PASSWORD=stmt_pssword
+DATABASE_DIALECT=mysql
