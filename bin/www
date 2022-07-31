@@ -89,7 +89,7 @@ function onListening() {
 
 /* ===== Socket.io ===== */
 
-/* Room */
+/* 채널 기반 소켓 */
 const room = ['room1', 'room2'];
 io.on('connection', (socket) => {
   socket.on('disconnect', () => {
@@ -116,7 +116,7 @@ io.on('connection', (socket) => {
   });
 });
 
-/* Namespace */
+/* 네임스페이스 기반 소켓 */
 /* 
 const namespace1 = io.of('/namespace1');
 namespace1.on('connection', (socket) => {
@@ -127,7 +127,7 @@ namespace1.on('connection', (socket) => {
 }); 
 */
 
-/* Basic */
+/* 기본 소켓 */
 /* 
 // connection을 수립하고, callback 인자로 socket을 받음
 io.on('connection', (socket) => {
